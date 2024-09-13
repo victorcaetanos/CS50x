@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <form action="/login" method="post">
+        <div class="mb-3">
+            <label for="symbol">Symbol</label>
+            <input autocomplete="off" class="form-control mx-auto w-auto" name="symbol" type="text" value="{{ stock.symbol }}" readonly>
+        </div>
+        <div class="mb-3">
+          <label for="price">Price</label>
+            <input class="form-control mx-auto w-auto" name="price" type="text" value="{{ stock.price | usd }}" readonly>
+        </div>
+    </form>
+    <button class="btn btn-primary" type="submit"><a href="/quote" style="text-decoration: none; color: white">⬅️Back</a></button>
+{% endblock %}

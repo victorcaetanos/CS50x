@@ -1,0 +1,179 @@
+.navbar
+{
+  background-color: #222831;
+}
+
+main
+{
+  background-color: #8bc4c7 ;
+}
+
+.nav-link:hover, .navbar-brand, .navbar-brand:hover, .card-text, .card-title
+{
+  color: #EEEEEE;
+}
+
+.nav-link
+{
+  color: #b1b3b3;
+  display: inline-block;
+}
+
+.btn-yeah
+{
+  color: #EEEEEE;
+  border-color: #EEEEEE;
+}
+
+.btn-yeah:hover
+{
+  color: #222831;
+  background-color: #EEEEEE;
+}
+
+.main-page
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 93.8vh;
+}
+
+.cards-membership
+{
+  display: flex;
+  gap: 80px;
+}
+
+.card
+{
+  flex: 1;
+  padding: 50px;
+  max-width: 350px;
+  min-width: 255px;
+  border: 2px solid #222831;
+  background-color: #31363F;
+}
+
+header
+{
+  border: solid #222831;
+  border-width: 0 0 1px 0;
+}
+
+.membership-price
+{
+  color: #8bc4c7;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.membership-checkmark
+{
+  color: #8bc4c7;
+  font-size: large;
+  font-weight: bold;
+}
+
+.membership-header
+{
+  padding: 0 0 50px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.membership-header > h1
+{
+  border: 3px solid #222831;
+  border-radius: 15px;
+  display: block;
+  margin: 16px 50px;
+}
+
+.checkout-form > form
+{
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+
+.checkout-form > form > button
+{
+  margin: 4% 30% 0 30%;
+}
+
+.face-grid
+{
+  min-width: 450px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+
+.row.button
+{
+  margin: 100px 0 0 0 ;
+}
+
+.col.button
+{
+  margin: 0 100px;
+  padding: 0;
+}
+
+.col.button > a
+{
+  min-width: 260px;
+}
+
+.accordion-item
+{
+  min-width: 600px;
+  max-width: 600px;
+}
+
+.accordion-body
+{
+  text-align: justify;
+}
+
+@media only screen and (max-width: 920px) {
+  .main-page
+  {
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-page.membership
+  {
+    height: 210vh;
+  }
+
+  .main-page.training
+  {
+    height: 110vh;
+  }
+
+  .cards-membership
+  {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .accordion-item
+  {
+    min-width: 380px;
+    max-width: 380px;
+  }
+  .accordion
+  {
+    margin: 0 100px 0 100px;
+  }
+}
+

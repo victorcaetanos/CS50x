@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function checkMultChoiceAnswer(button)
+            {
+                if (button.innerHTML == 'White') {
+                    document.querySelector(".feedback1").innerHTML = "Correct";
+                    button.style.backgroundColor = "green";
+                    return;
+                }
+                document.querySelector(".feedback1").innerHTML = "Incorrect";
+                button.style.backgroundColor = "red";
+            }
+
+            function checkFreeChoiceAnswer()
+            {
+                if (document.querySelector("#answer").value == 7) {
+                    document.querySelector(".feedback2").innerHTML = "Correct";
+                    document.querySelector("#answer").style.backgroundColor = "green";
+                    return;
+                }
+                document.querySelector(".feedback2").innerHTML = "Incorrect";
+                document.querySelector("#answer").style.backgroundColor = "red";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What light color is produced by the junction of Red, Green and Blue?</h3>
+                <button onclick="checkMultChoiceAnswer(this)">Black</button>
+                <button onclick="checkMultChoiceAnswer(this)">White</button>
+                <button onclick="checkMultChoiceAnswer(this)">Cyan</button>
+                <button onclick="checkMultChoiceAnswer(this)">Dark Green</button>
+                <button onclick="checkMultChoiceAnswer(this)">Purple</button>
+                <p class="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>How many colors are the in a rainbow?</h3>
+                <input type="number" id="answer">
+                <button onclick="checkFreeChoiceAnswer()">Check Answer</button>
+                <p class="feedback2"></p>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!--
+Design a webpage using HTML, CSS, and JavaScript to let users answer trivia questions.
+
+In index.html, add beneath “Part 1” a multiple-choice trivia question of your choosing with HTML.
+    You should use an h3 heading for the text of your question.
+    You should have one button for each of the possible answer choices. There should be at least three answer choices, of which exactly one should be correct.
+Using JavaScript, add logic so that the buttons change colors when a user clicks on them.
+    If a user clicks on a button with an incorrect answer, the button should turn red and text should appear beneath the question that says “Incorrect”.
+    If a user clicks on a button with the correct answer, the button should turn green and text should appear beneath the question that says “Correct!”.
+In index.html, add beneath “Part 2” a text-based free response question of your choosing with HTML.
+    You should use an h3 heading for the text of your question.
+    You should use an input field to let the user type a response.
+    You should use a button to let the user confirm their answer.
+Using JavaScript, add logic so that the text field changes color when a user confirms their answer.
+    If the user types an incorrect answer and presses the confirmation button, the text field should turn red and text should appear beneath the question that says “Incorrect”.
+    If the user types the correct answer and presses the confirmation button, the input field should turn green and text should appear beneath the question that says “Correct!”.
+Optionally, you may also:
+
+Edit styles.css to change the CSS of your webpage!
+Add additional trivia questions to your trivia quiz if you would like!
+-->

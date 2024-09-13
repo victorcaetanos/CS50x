@@ -1,0 +1,19 @@
+
+Running the command "SELECT AVG(energy), AVG(valence), AVG(danceability) FROM songs" it returns the following results:
+
++-------------+--------------+-------------------+
+| AVG(energy) | AVG(valence) | AVG(danceability) |
++-------------+--------------+-------------------+
+| 0.65906     | 0.484443     | 0.71646           |
++-------------+--------------+-------------------+
+
+With that in mind we can conclude that the listener has a liking towards more energetic and
+fast-paced songs, with a balance between sad and joyful songs and is in general more inclined
+towards danceable/rhythmic songs.
+
+While this might tell us a bit about the listener's taste, it's not 100% on point.
+It doesn't take into account the mood fluctuation that can happen to the listener taste and
+also doesn't account for the times a certain song was listened to, to fix all that weighted
+averages could be made and the data could be displayed in a graph so it shows the fluctuation
+throughout the year.
+

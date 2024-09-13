@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: After timing all of the algoritms and finding out which ones uses Merge Sort I was easy to find Bubble Sort because when timing sorted files it was the fastest one or close to being the fastest, which coincides with "Big Omega" time complexity that it has.
+
+sort2 uses: Merge Sort
+
+How do you know?: After timing all of the algoritms It's clear that "Sort2" has the fastest in most cenarios, losing sometime to "Sort1" when timing the sorted number list, which is true due to bubble being inded faster in those cases.
+
+sort3 uses: Selection Sort
+
+How do you know?: I could use the process of elimination, but a pattern that I noticed when timing the "Sort3" file was that in all the cases it had a similar time, so it fits the pattern of Selection Sort due to it's "Big O" and "Big Omega" time complexities being the same.

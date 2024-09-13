@@ -1,0 +1,9 @@
+10 distinct HTML tags used
+(div, a, span, ul, li, button, h1, p, input, label) and some more
+
+5 distinct CSS properties used
+(gap, flex-direction, justify-content, align-items, height)
+
+i used java script to make the button on the top right corner play a sound when pressed
+
+i used bootstrap in many if not all pages, for the navegation bar, buttons, accordion, cards and probably more tiny details
